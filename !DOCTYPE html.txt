@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .chess-board {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 0;
+            width: 320px;
+            height: 320px;
+        }
+        .chess-board div {
+            width: 40px;
+            height: 40px;
+        }
+        .chess-board .white {
+            background-color: #f0d9b5;
+        }
+        .chess-board .black {
+            background-color: #b58863;
+        }
+        .chess-piece {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="flex">
+        <aside class="w-60 bg-gray-800 p-4">
+            <div class="text-xl font-bold mb-6">Chess.com</div>
+            <ul>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">play_arrow</span>Play</a></li>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">puzzle</span>Puzzles</a></li>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">school</span>Learn</a></li>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">live_tv</span>Watch</a></li>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">article</span>News</a></li>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">people</span>Social</a></li>
+                <li class="mb-4"><a href="#" class="flex items-center"><span class="material-icons mr-2">more_horiz</span>More</a></li>
+            </ul>
+            <div class="mt-auto">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded">Free Trial</button>
+            </div>
+        </aside>
+        <main class="flex-1 p-4">
+            <div class="flex justify-between mb-4">
+                <div>Opponent</div>
+                <div class="flex items-center space-x-4">
+                    <span class="material-icons">add</span>
+                    <span>New Game</span>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <div class="chess-board">
+                    <!-- Chess Board -->
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece black"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                    <div class="chess-piece white"></div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <button class="bg-green-500 text-white py-2 px-4 rounded">Play</button>
+                    </div>
+                    <div class="text-sm">Play a Friend</div>
+                    <div class="text-sm">Tournaments</div>
+                    <div class="text-sm">Upcoming Tournaments</div>
+                    <div class="text-sm">5|0 Blitz 3 min</div>
+                    <div class="text-sm">10|0 Live 960 Tournament 8 min</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
